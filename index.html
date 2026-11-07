@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Last Follower Standing 🏝️</title>
+<meta name="description" content="Every follower washes up on the island. Every night, someone dies. Find your castaway.">
+<meta property="og:title" content="Last Follower Standing 🏝️">
+<meta property="og:description" content="Every follower washes up on the island. Every night, someone dies. Find your castaway.">
+<meta property="og:image" content="og.png">
+<meta name="theme-color" content="#37c6e0">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="tags"></div>
+
+<header id="hud">
+  <div id="brand">LAST FOLLOWER<br>STANDING</div>
+  <div id="stats"><b id="alive">–</b><span>ALIVE</span></div>
+  <div id="day">DAY <b id="dayn">0</b></div>
+  <div id="boat">⛴️ BOAT LEAVES <b id="clock">--:--:--</b></div>
+</header>
+
+<div id="card" class="hide">
+  <button id="x" aria-label="Close">×</button>
+  <div id="ctitle"></div>
+  <div id="cbadges"></div>
+  <div id="cline"></div>
+  <div id="cbtns">
+    <button id="share">Share my castaway</button>
+    <a id="shield" target="_blank" rel="noopener">🛡️ Get a shield</a>
+  </div>
+</div>
+
+<div id="join" class="hide">
+  <div id="jtitle"></div>
+  <div id="jtext">Not on the island yet. Follow + DM <b>SPAWN</b> to wash up with your name.</div>
+  <a id="jgo" target="_blank" rel="noopener">Get on the boat ⛴️</a>
+</div>
+
+<footer id="bar">
+  <input id="q" placeholder="Find your castaway: @username" autocomplete="off" autocapitalize="off" spellcheck="false">
+</footer>
+<div id="hint">Drag to look around · pinch to zoom</div>
+<div id="load"><div>🏝️</div>Washing ashore…</div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
